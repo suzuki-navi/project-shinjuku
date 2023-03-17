@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8"/>
+<title>lesson006</title>
+</head>
+<body>
+  <h1>JavaScriptをいじってみる</h1>
+  <p id="date">(2023/03/17)</p>
+  <p>(目安 20分)</p>
+  <p>開発のスキルを身に着けるにはどうしたらよいのかは、私もわかっておりません。人によってそれぞれです。試行錯誤しながらお互いに合った方法を探しています。</p>
+  <p>JavaScriptは一般的にウェブサイトやウェブアプリの開発で使います。しかしその目的に限らずプログラミングを少し試すには便利ですので、まずはJavaScriptとしています。</p>
+  <h2>解説</h2>
+  <h3>1</h3>
+  <p>次のJavaScriptのプログラムを実行すると、単に10と表示されます。</p>
+  <pre>
+console.log(10);
+  </pre>
+  <p>前回(<a href="lesson005.html">lesson005</a>)ブラウザのConsoleで実行してみましたが、忘れていたらもう一度ブラウザのConsoleから試してみてください。</p>
+  <h3>2</h3>
+  <p>次の2行のプログラムもやはり単に10と表示されます。</p>
+  <pre>
+const a = 10;
+console.log(a);
+  </pre>
+  <p><code>const a = 10</code> というのは10という値に<code>a</code>という名前の名札を貼るという意味です。</p>
+  <h3>3</h3>
+  <p>次の3行のプログラムもやはり単に10と表示されます。</p>
+  <pre>
+const a = 10;
+const b = a;
+console.log(b);
+  </pre>
+  <p><code>a</code>という名前の名札を貼られた値に<code>b</code>という名前の名札を貼るという意味です。<code>a</code>と<code>b</code>の2つの名札が同じ値に貼られることになります。</p>
+  <h3>4</h3>
+  <p>次の2行のプログラムは12と表示されます。</p>
+  <pre>
+const a = 10;
+console.log(a + 2);
+  </pre>
+  <h3>5</h3>
+  <p>次の4行のプログラムは、10, 12の順に2つの数字が表示されます。</p>
+  <pre>
+let a = 10;
+console.log(a);
+a = 12;
+console.log(a);
+  </pre>
+  <p>さきほどの<code>const</code>の代わりに<code>let</code>になっています。</p>
+  <p><code>let a = 10</code> というのは<code>const</code>のときとほとんど同じですが、<code>a</code>という名前の名札を後から別の値に貼り変えることができます。<code>const</code>はあとで貼り変えることができません。</p>
+  <p>このへんの書き方は言語によって異なります。JavaScriptを本格的に書けるようになりたいのであれば覚えておいてください。JavaScript不要であれば<code>const</code>や<code>let</code>という書き方まで覚える必要はありません。ただし、書き方が違うだけで同じ概念はどの言語にもあるので、名札の貼り方に2種類あるということは覚えておいてください。（細かいこと言うと言語によって違いはいっぱいあります。JavaScriptも本当は3つ目の書き方がありますが、ここで説明したいことではないので省略です）</p>
+  <h2>問題</h2>
+  <p>次の4行のプログラムを実行すると、なんと表示されますか？ブラウザで実行させずに、結果を考えてみてください。</p>
+  <pre>
+let a = 10;
+console.log(a);
+a = a + 20;
+console.log(a);
+  </pre>
+  <p>次のプログラムもどうなるか考えてみてください。</p>
+  <pre>
+let a = 1;
+let b = a + 2;
+console.log(b);
+a = 5;
+console.log(b);
+  </pre>
+  <p>
+    <strike>この課題を終えたら、または途中で断念したら以下を教えてください。</strike>
+  </p>
+  <p>
+    問題の答えを自分で考えてみて、結果を教えてください。
+  </p>
+</body>
+</html>
